@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "eamodio.gitlens",
+    "eg2.tslint",
+    "esbenp.prettier-vscode",
+    "christian-kohler.npm-intellisense",
+    "mikestead.dotenv",
+    "msjsdiag.debugger-for-chrome",
+    "orta.vscode-jest",
+    "robertohuertasm.vscode-icons",
+    "vstirbu.vscode-mermaid-preview",
+    "ryanluker.vscode-coverage-gutters"
+  ]
+}

@@ -1,0 +1,101 @@
+.Tile {
+  flex-shrink: 0;
+  width: 1em;
+  height: 1em;
+  background-color: #001719;
+  margin: 1px;
+  position: relative;
+  box-shadow: 0 0 0 0 rgba(0, 0, 255, 1);
+  opacity: 1;
+  z-index: auto;
+
+  &.vfx-enabled {
+    transition: background-color 1s cubic-bezier(0, 1, 0.5, 1);
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      box-shadow: 0 0 10em 2em white;
+      opacity: 0;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      transition: opacity 5s cubic-bezier(0, 1, 0.5, 1), box-shadow 0.5s linear;
+    }
+    &.food {
+      &::before {
+        @keyframes loop-b {
+          0%,
+          100% {
+            box-shadow: 0 0 10em 2em white;
+          }
+          50% {
+            box-shadow: 0 0 0em 0em white;
+          }
+        }
+        content: "";
+        position: absolute;
+        z-index: -1;
+        box-shadow: 0 0 10em 2em white;
+        opacity: 0.05;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        animation: loop-b 3s infinite;
+      }
+      &::after {
+        @keyframes loop {
+          0%,
+          100% {
+            box-shadow: 0 0 1em 0.2em white;
+          }
+          50% {
+            box-shadow: 0 0 0em 0em white;
+          }
+        }
+        content: "";
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        box-shadow: 0 0 1em 0.2em white;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border-radius: 0.2em;
+        animation: loop 3s infinite;
+      }
+    }
+    &.snake {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        box-shadow: 0 0 1em 0.2em #00a1b3;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border-radius: 0.2em;
+      }
+      &.snake-head {
+        &::before {
+          transition: none;
+          opacity: 0.05;
+        }
+      }
+    }
+  }
+
+  &.food {
+    border-radius: 0.2em;
+    background-color: white;
+  }
+  &.snake {
+    transition: none;
+    transition-delay: 0;
+    background-color: #00e5ff;
+    border-radius: 0.2em;
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+  "rulesDirectory": ["tslint-plugin-prettier"],
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts",
+      "coverage/lcov-report/*.js"
+    ]
+  },
+  "rules": {
+    "jsx-boolean-value": false,
+    "curly": [true, "ignore-same-line"],
+    "member-access": [true, "check-accessor"],
+    "object-literal-sort-keys": false,
+    "prettier": true
+  }
+}

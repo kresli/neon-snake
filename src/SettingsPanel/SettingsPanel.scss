@@ -1,0 +1,27 @@
+.SettingsPanel {
+  padding: 1em;
+
+  .vfx {
+    flex-direction: row;
+    font-family: "Gas";
+    color: #00e9ff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .checkbox {
+      width: 1em;
+      height: 1em;
+      border: 1px solid #00e9ff;
+      &.checked {
+        background: #00e9ff;
+      }
+    }
+    .title {
+      margin-right: 0.5em;
+      font-size: 2em;
+      text-shadow: none;
+      opacity: 0.5;
+    }
+  }
+}

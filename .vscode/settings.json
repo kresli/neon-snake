@@ -1,0 +1,13 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "tslint.alwaysShowStatus": true,
+  "editor.tabSize": 2,
+  "tslint.autoFixOnSave": true,
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.referencesCodeLens.enabled": true,
+  "prettier.tslintIntegration": true,
+  "prettier.trailingComma": "all",
+  "coverage-gutters.showLineCoverage": true,
+  "coverage-gutters.showRulerCoverage": true,
+  "editor.formatOnSave": true
+}

@@ -1,0 +1,212 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`three tile size snake change direction will follow path 1`] = `
+Array [
+  Object {
+    "position": Object {
+      "x": 2,
+      "y": 0,
+    },
+    "state": "Snake",
+    "uuid": "2-0",
+  },
+  Object {
+    "position": Object {
+      "x": 1,
+      "y": 0,
+    },
+    "state": "Snake",
+    "uuid": "1-0",
+  },
+  Object {
+    "position": Object {
+      "x": 0,
+      "y": 0,
+    },
+    "state": "Snake",
+    "uuid": "0-0",
+  },
+]
+`;
+
+exports[`three tile size snake change direction will follow path 2`] = `
+Array [
+  Object {
+    "position": Object {
+      "x": 3,
+      "y": 0,
+    },
+    "state": "Snake",
+    "uuid": "3-0",
+  },
+  Object {
+    "position": Object {
+      "x": 2,
+      "y": 0,
+    },
+    "state": "Snake",
+    "uuid": "2-0",
+  },
+  Object {
+    "position": Object {
+      "x": 1,
+      "y": 0,
+    },
+    "state": "Snake",
+    "uuid": "1-0",
+  },
+]
+`;
+
+exports[`three tile size snake change direction will follow path 3`] = `
+Array [
+  Object {
+    "position": Object {
+      "x": 3,
+      "y": 1,
+    },
+    "state": "Snake",
+    "uuid": "3-1",
+  },
+  Object {
+    "position": Object {
+      "x": 3,
+      "y": 0,
+    },
+    "state": "Snake",
+    "uuid": "3-0",
+  },
+  Object {
+    "position": Object {
+      "x": 2,
+      "y": 0,
+    },
+    "state": "Snake",
+    "uuid": "2-0",
+  },
+]
+`;
+
+exports[`three tile size snake eat tile 1`] = `
+Array [
+  Object {
+    "position": Object {
+      "x": 3,
+      "y": 0,
+    },
+    "state": "Snake",
+    "uuid": "3-0",
+  },
+  Object {
+    "position": Object {
+      "x": 2,
+      "y": 0,
+    },
+    "state": "Snake",
+    "uuid": "2-0",
+  },
+  Object {
+    "position": Object {
+      "x": 1,
+      "y": 0,
+    },
+    "state": "Snake",
+    "uuid": "1-0",
+  },
+  Object {
+    "position": Object {
+      "x": 0,
+      "y": 0,
+    },
+    "state": "Snake",
+    "uuid": "0-0",
+  },
+]
+`;
+
+exports[`three tile size snake move right 1`] = `
+Array [
+  Object {
+    "position": Object {
+      "x": 2,
+      "y": 0,
+    },
+    "state": "Snake",
+    "uuid": "2-0",
+  },
+  Object {
+    "position": Object {
+      "x": 1,
+      "y": 0,
+    },
+    "state": "Snake",
+    "uuid": "1-0",
+  },
+  Object {
+    "position": Object {
+      "x": 0,
+      "y": 0,
+    },
+    "state": "Snake",
+    "uuid": "0-0",
+  },
+]
+`;
+
+exports[`three tile size snake move right 2`] = `
+Array [
+  Object {
+    "position": Object {
+      "x": 3,
+      "y": 0,
+    },
+    "state": "Snake",
+    "uuid": "3-0",
+  },
+  Object {
+    "position": Object {
+      "x": 2,
+      "y": 0,
+    },
+    "state": "Snake",
+    "uuid": "2-0",
+  },
+  Object {
+    "position": Object {
+      "x": 1,
+      "y": 0,
+    },
+    "state": "Snake",
+    "uuid": "1-0",
+  },
+]
+`;
+
+exports[`three tile size snake set all tiles 1`] = `
+Array [
+  Object {
+    "position": Object {
+      "x": 2,
+      "y": 0,
+    },
+    "state": "Snake",
+    "uuid": "2-0",
+  },
+  Object {
+    "position": Object {
+      "x": 1,
+      "y": 0,
+    },
+    "state": "Snake",
+    "uuid": "1-0",
+  },
+  Object {
+    "position": Object {
+      "x": 0,
+      "y": 0,
+    },
+    "state": "Snake",
+    "uuid": "0-0",
+  },
+]
+`;

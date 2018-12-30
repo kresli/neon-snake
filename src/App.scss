@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Halogen";
+  src: url(../src/fonts/neon-absolute-sans.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gas";
+  src: url(../src/fonts/halogen-gas-lights.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  .title {
+    font-family: "Halogen";
+    font-size: 3em;
+    text-shadow: 0 0 0.5em;
+  }
+  .top-row {
+    background: #002023;
+    flex: 1;
+    border-bottom: 1px solid #0c1011;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00e9ff;
+  }
+  .bottom-row {
+    border-top: 1px solid #0c1011;
+    background: #002023;
+    flex: 1;
+  }
+}

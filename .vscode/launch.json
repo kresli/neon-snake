@@ -1,0 +1,39 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "node",
+        "name": "debug yarn test",
+        "request": "launch",
+        "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/react-scripts",
+        "args": ["test", "--env=jsdom", "--runInBand"],
+        "cwd": "${workspaceFolder}",
+        "console": "integratedTerminal",
+        "protocol": "inspector",
+        "internalConsoleOptions": "neverOpen"
+      },
+      {
+        "type": "chrome",
+        "request": "launch",
+        "name": "yarn watch",
+        "url": "http://localhost:3000",
+        "webRoot": "${workspaceFolder}",
+        "runtimeArgs": ["--auto-open-devtools-for-tabs"]
+      },
+      {
+        "type": "chrome",
+        "request": "launch",
+        "name": "yarn storybook",
+        "url": "http://localhost:9009",
+        "sourceMaps": true,
+        "webRoot": "${workspaceFolder}",
+        "sourceMapPathOverrides": {
+          "webpack:///*": "${webRoot}/*",
+          "webpack:///./*": "${webRoot}/*",
+          // "webpack:///src/*": "${webRoot}/*"
+          "webpack:///./~/*": "${webRoot}/node_modules/*"
+        }
+      }
+    ]
+  }
+  

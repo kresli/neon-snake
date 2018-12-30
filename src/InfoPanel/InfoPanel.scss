@@ -1,0 +1,20 @@
+.InfoPanel {
+  padding: 1em;
+  .score {
+    display: inline-flex;
+    flex-direction: column;
+    font-family: "Gas";
+    color: #00e9ff;
+    .title {
+      font-size: 2em;
+      text-shadow: none;
+      opacity: 0.5;
+    }
+    .value {
+      font-size: 5em;
+      text-shadow: 0 0 0.5em;
+      justify-content: center;
+      display: flex;
+    }
+  }
+}
