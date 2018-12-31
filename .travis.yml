@@ -2,4 +2,3 @@ language: node_js
 script: yarn test
 node_js:
   - 10
-̀
